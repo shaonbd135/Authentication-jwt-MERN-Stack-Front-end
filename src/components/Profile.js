@@ -25,9 +25,8 @@ const Profile = () => {
     // })
     return (
         <div className='text-center'>
-            <h1>This is Profile Page</h1>
-            <h3>{user.name}</h3>
-            <h3>{user.username}</h3>
+            <h1>Welcome to Our Website</h1>
+            <h3>Name: {user.name}</h3>
         </div>
     );
 };

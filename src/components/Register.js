@@ -27,7 +27,7 @@ const Register = () => {
 
             })
             .catch(err => {
-                navigate('/login');
+                navigate('/register');
             })
     }, [])
 
