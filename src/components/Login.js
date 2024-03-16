@@ -54,11 +54,11 @@ const Login = () => {
                         {registerSuccess === true ? <div className='alert alert-success'>Registration Successful, Please Login</div> : null}
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Username</label>
-                            <input type="text" name='username' class="form-control" id="exampleFormControlInput1" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+                            <input type="text" name='username' class="form-control" id="exampleFormControlInput1" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
                         </div>
                         <div class="mb-3">
                             <label for="inputPassword5" class="form-label">Password</label>
-                            <input type="password" name='password' id="inputPassword5" class="form-control" value={password} onChange={(e) => setPassword(e.target.value)} />
+                            <input type="password" name='password' id="inputPassword5" class="form-control" value={password} onChange={(e) => setPassword(e.target.value)} required />
                         </div>
                         <button class="btn btn-primary" type='submit'> Login</button>
                         <div className='text-danger mt-3'>
